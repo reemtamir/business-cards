@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error-input {
+  font-size: 0.8rem !important;
+  text-align: center;
+  background-color: rgb(238, 238, 117);
+}
+.input-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.label {
+  width: 5.2rem;
+  font-weight: 700;
+}
+
+.input {
+  flex: 1;
+  align-self: flex-end;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+@media screen and (min-width: 300px) {
+  .label {
+    min-width: 6rem;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 760px) {
+  .form {
+    width: 80%;
+  }
+}
