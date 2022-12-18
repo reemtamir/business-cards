@@ -3,13 +3,14 @@ import { useFormik } from 'formik';
 import Joi from 'joi';
 import { joiValidation } from '../joiValidate';
 import { toast } from 'react-toastify';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
 const CardSignIn = () => {
   const { logIn: signIn, user } = useAuth();
+  const [error, setError] = useState('');
 
   const navigate = useNavigate();
   const strongPasswordRegex =
@@ -33,8 +34,8 @@ const CardSignIn = () => {
     onSubmit: async (values) => {
       try {
         await signIn({ ...values });
-      } catch {
-        return null;
+      } catch ({ response }) {
+        setError(response.data);
       }
     },
   });
@@ -50,6 +51,7 @@ const CardSignIn = () => {
   return (
     <>
       <form className="form" onSubmit={form.handleSubmit} noValidate>
+        {error && <p className="error">{error}</p>}
         <CardInput
           inputClass={'input'}
           label="Email"

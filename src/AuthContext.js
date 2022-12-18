@@ -11,13 +11,9 @@ const AuthContext = ({ children }) => {
   }
 
   async function logIn(values) {
-    try {
-      const user = await signIn(values);
-      refreshUser();
-      return user;
-    } catch {
-      return null;
-    }
+    const user = await signIn(values);
+    refreshUser();
+    return user;
   }
   function LogOut() {
     logOut();
