@@ -41,8 +41,8 @@ const CardEditCard = () => {
         await updateCard(id, values);
         toast('Card was update ✔');
         navigate('/my-cards');
-      } catch (error) {
-        console.log(error);
+      } catch ({ response }) {
+        setError(response.data);
       }
     },
   });
@@ -50,7 +50,7 @@ const CardEditCard = () => {
   return (
     <>
       <form className="form" onSubmit={form.handleSubmit} noValidate>
-        {error && <p className='error'>{error}</p>}
+        {error && <p className="error">{error}</p>}
 
         <CardInput
           inputClass={'input'}

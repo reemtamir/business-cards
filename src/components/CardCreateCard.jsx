@@ -25,7 +25,7 @@ const CardCreateCard = () => {
       bizPhone: Joi.string().required(),
       bizAddress: Joi.string().required(),
       bizDescription: Joi.string().required(),
-      bizImage: Joi.string().allow('').label("'Image"),
+      bizImage: Joi.string().allow('').label('Image'),
     }),
 
     async onSubmit(values) {
