@@ -1,7 +1,7 @@
 {
   "name": "react-cards",
   "version": "0.1.0",
-  "homepage": "https://github.com/reemtamir/react-cards-final",
+  "homepage": "https://reemtamir.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

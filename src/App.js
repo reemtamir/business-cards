@@ -57,7 +57,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
 
           <Route
-            path="./my-cards"
+            path="my-cards"
             element={
               <PrivateRout>
                 <CardMyCards />
@@ -66,7 +66,7 @@ function App() {
           ></Route>
 
           <Route
-            path="./create-card"
+            path="create-card"
             element={
               <PrivateRout>
                 <CardCreateCard />
@@ -75,7 +75,7 @@ function App() {
           ></Route>
 
           <Route
-            path={`./delete-card/:id`}
+            path={`delete-card/:id`}
             element={
               <PrivateRout>
                 <CardDeleteCard />
@@ -83,16 +83,16 @@ function App() {
             }
           ></Route>
           <Route
-            path={`./edit-card/:id`}
+            path={`edit-card/:id`}
             element={
               <PrivateRout>
                 <CardEditCard />
               </PrivateRout>
             }
           ></Route>
-          <Route path="./sign-in" element={<CardSignIn />}></Route>
-          <Route path="./sign-up" element={<CardSignUp />}></Route>
-          <Route path="./log-out" element={<CardLogOut />}></Route>
+          <Route path="sign-in" element={<CardSignIn />}></Route>
+          <Route path="sign-up" element={<CardSignUp />}></Route>
+          <Route path="log-out" element={<CardLogOut />}></Route>
         </Routes>
       </main>
       <div className="space"></div>
