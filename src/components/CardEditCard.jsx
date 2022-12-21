@@ -39,7 +39,7 @@ const CardEditCard = () => {
     async onSubmit(values) {
       try {
         await updateCard(id, values);
-        toast('Card was update ✔');
+        toast('Card was update! ✔');
         navigate('/my-cards');
       } catch ({ response }) {
         setError(response.data);
