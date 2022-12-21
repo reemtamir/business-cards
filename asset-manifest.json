@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reemtamir/react-cards-final/static/css/main.f575ebf2.css",
+    "main.js": "/reemtamir/react-cards-final/static/js/main.371afbf2.js",
+    "static/js/787.7345901b.chunk.js": "/reemtamir/react-cards-final/static/js/787.7345901b.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/reemtamir/react-cards-final/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/reemtamir/react-cards-final/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/reemtamir/react-cards-final/index.html",
+    "main.f575ebf2.css.map": "/reemtamir/react-cards-final/static/css/main.f575ebf2.css.map",
+    "main.371afbf2.js.map": "/reemtamir/react-cards-final/static/js/main.371afbf2.js.map",
+    "787.7345901b.chunk.js.map": "/reemtamir/react-cards-final/static/js/787.7345901b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f575ebf2.css",
+    "static/js/main.371afbf2.js"
+  ]
+}
