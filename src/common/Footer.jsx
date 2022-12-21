@@ -1,4 +1,3 @@
-
 const Footer = ({ isDark }) => {
   return (
     <footer>
@@ -9,7 +8,10 @@ const Footer = ({ isDark }) => {
           textAlign: 'center',
         }}
       >
-        <a href="https://www.linkedin.com/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/re-em-tamir-18629b25a/"
+          target="_blank"
+        >
           <i
             style={{
               color: isDark ? 'white' : 'black',
