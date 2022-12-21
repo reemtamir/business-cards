@@ -1,6 +1,7 @@
 {
   "name": "react-cards",
   "version": "0.1.0",
+  "homepage": "https://github.com/reemtamir/react-cards-final",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +12,8 @@
     "bootstrap-icons": "^1.10.2",
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
+    "install": "^0.13.0",
     "joi": "^17.7.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
@@ -22,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
